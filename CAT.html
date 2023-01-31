@@ -11,11 +11,11 @@
         href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap"
         rel="stylesheet">
 
-    <title>Cat Adoption Landingpage</title>
+    <title>Pet Landing Page</title>
 
     <style>
         .container {
-            width: 700px;
+            width: 800px;
             margin: 0 auto;
         }
 
@@ -44,8 +44,9 @@
         }
 
         body {
-            font-family: 'Lora', serif;
+            font-family: 'Source Sans Pro', sans-serif;
             font-size: 18px;
+            color: #222831;
             margin: 0px;
             background-color: bisque;
         }
@@ -55,27 +56,35 @@
         h3 {
             font-family: 'Libre Baskerville', serif;
             font-weight: bold;
+            letter-spacing: 1.5px;
             padding-top: 15px;
+        }
+
+        h2 {
+            text-align: center;
+            padding: 20px;
         }
 
         h5 {
             font-family: 'Libre Baskerville', serif;
             font-weight: bold;
+            text-align: center;
         }
 
         p {
             font-family: 'Source Sans Pro', sans-serif;
+            font-size: 20px;
             text-align: justify;
         }
 
-        a {
-            text-decoration: none;
+        .paragraph {
+            line-height: 30px;
         }
 
         .banner {
             background-image: linear-gradient(-225deg, rgba(224, 20, 20, 0.7), rgba(238, 222, 159, 0.5)), url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/058/673/original/adopt_a_cat.jpg?1671045012);
             color: white;
-            padding: 150px 0;
+            padding: 50px 0;
             background-size: cover;
             background-position: center;
         }
@@ -91,26 +100,27 @@
             margin-bottom: 40px;
         }
 
-        .btn-blue {
-            background: rgb(86, 77, 214);
-            border-radius: 4px;
-            border: 1px solid rgb(96, 215, 236);
-            padding: 15px 20px;
-            color: white;
-            font-weight: bold;
-            font-family: 'Roboto', sans-serif;
+        .title {
+            color: #f96d00;
+            text-align: center;
+            padding: 30px 15px;
         }
 
-        .card-white {
-            background: rgb(247, 236, 224);
-            padding: 10px 25px;
-            border: 1px solid lightgrey;
-            text-align: justify;
+        .card-body {
+            width: auto;
         }
 
-        #photo-cat-profile {
-            width: 150px;
-            height: 150px;
+        .card-body:hover {
+            filter: sepia(25%);
+            transform: scale(1.1);
+            transition: all 300ms ease-in-out;
+            cursor: pointer;
+        }
+
+        .card-body {
+            border-radius: 5px;
+            border: 1px solid #393e46;
+            box-shadow: 5px 1px 15px rgba(57, 62, 70, 1);
         }
     </style>
 
@@ -127,92 +137,100 @@
             <h2>
                 Adopt a cat in need!
             </h2>
-            <a href="" class="btn-blue">Start Now</a>
         </div>
     </div>
 
     <div class="container">
-        <h1>
-            Your first UI kit
-        </h1>
-        <h2>
-            1. Container
-        </h2>
-        <br />
-        <p>
-            Against violence and abandonment, we can offer a forever family to our four-legged friends.
-            Abandonment, kitten trafficking, mistreatment, every day thousands of cats are victims of unacceptable
-            violence.
-            <br /><br />
-            Adopt one of the cats we rescued and give it the most beautiful gift of all: to be part of a forever family!
-            <br /><br />
-            Below you can find some of the most beautiful stories of adopted cats: Rocco, Miss, Cappuccino are some of
-            their names.
-            And if you want to know how to adopt one of our rescued cats, please contact animal welfare associations in
-            your city.
-        </p>
-        <h2>
+
+        <h2 class="title">
             Happy ending stories
         </h2>
 
         <div class="container-adoption-stories">
             <div class="row">
                 <div class="col">
-                    1 of 3
                     <div class="card" style="width: 18rem;">
                         <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/058/596/original/cat_Rocco.jpg?1671035408"
                             class="card-img-top" alt="cat">
                         <div class="card-body">
                             <h5 class="card-title">Rocco</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's
-                                content.</p>
+                            <p class="card-text">Saved from the abuse of wicked children who wanted to throw him into
+                                the sea, thanks to the intervention of a
+                                volunteer. For over 10 years, Rocco has been enjoying the cosiness of
+                                home with the same family that took Miss in.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    2 of 3
                     <div class="card" style="width: 18rem;">
                         <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/058/599/original/cat_Fiocco.jpeg?1671035435"
                             class="card-img-top" alt="cat">
                         <div class="card-body">
                             <h5 class="card-title">Fiocco</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's
-                                content.</p>
+                            <p class="card-text">Fiocco wandered lonely through the streets. Poor Fiocco, he
+                                had almost certainly been abandoned! But thanks to the online ad published by the
+                                volunteers, it found a
+                                wonderful adoption in a villa with many other feline friends.</p>
                         </div>
                     </div>
                 </div>
+
                 <div class="col">
-                    3 of 3
                     <div class="card" style="width: 18rem;">
                         <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/058/597/original/cat_Miss.jpeg?1671035415"
                             class="card-img-top" alt="cat">
                         <div class="card-body">
                             <h5 class="card-title">Miss</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's
-                                content.</p>
+                            <p class="card-text">Found a few months old on a rainy October afternoon while finding
+                                precarious shelter under a car. Immediately rescued by
+                                volunteers from a local association, then groomed, wormed and given her first vaccine
+                                Miss was adopted by Rocco's family
+                                six years ago.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    3 of 3
                     <div class="card" style="width: 18rem;">
                         <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/058/600/original/cat_Valery.jpeg?1671035442"
                             class="card-img-top" alt="cat">
                         <div class="card-body">
                             <h5 class="card-title">Valery</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's
-                                content.</p>
+                            <p class="card-text">Valery was disliked by the neighbourhood. Some people hated her so much
+                                that they drove her away by throwing stones at
+                                her. It was imperative that she be saved! Stalled by those who had taken her in to save
+                                her from the street, in time she
+                                won the hearts of children.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
+        <br />
+
+        <div class="container-paragraph">
+            <h2 class="title">
+                What you can do
+            </h2>
+            <br />
+            <p class="paragraph">
+                Against violence and abandonment, we can offer a forever family to our four-legged friends.
+                Abandonment, kitten trafficking, mistreatment, every day thousands of cats are victims of unacceptable
+                violence.
+                <br /><br />
+                Adopt one of the cats we rescued and give it the most beautiful gift of all: <strong>to be part of a
+                    forever family!</strong>
+                <br /><br />
+                Here are some of the most beautiful stories of adopted cats: Rocco, Miss, Cappuccino are some of their
+                names. Visit the
+                websites of the rescue and animal protection associations and discover how many wonderful cats are
+                waiting for you!
+            </p>
+        </div>
+
+
     </div>
+
 </body>
 
 </html>
